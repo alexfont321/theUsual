@@ -47,6 +47,27 @@
       "id": 4
     }
   ],
-  "restaurants": [],
+  "restaurants": [
+    {
+    "id": 1,
+    "name": "Chick-Fil-A",
+    "menu": [],
+    "beverages": []
+  },
+  {
+    "id": 2,
+    "name": "Jersey Mike's",
+    "menu": [],
+    "beverages": []
+  },
+  {
+    "id": 3,
+    "name": "Starbucks",
+    "menu": [],
+    "beverages": []
+  }
+
+
+],
   "orders": []
 }

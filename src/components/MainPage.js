@@ -4,16 +4,19 @@ import GroupsList from "./groups/GroupsList";
 import dbCalls from "../modules/DatabaseCalls";
 import CreateGroupForm from "./groups/CreateGroupForm";
 import GroupRestaurants from "./groups/GroupRestaurants"
+import RestaurantOrder from "./restaurants/RestaurantOrders"
 
 export default class MainPage extends Component {
 
     state = {
-        groups: []
+        groups: [],
+        restaurants: []
     }
 
     componentDidMount() {
         let newState = {}
         dbCalls.getAll("groups").then(groups => {newState.groups = groups})
+        .then(() => dbCalls.getAll("restaurants")).then(restaurants => {newState.restaurants = restaurants})
         .then(() => {
             this.setState(newState)
 
@@ -34,9 +37,13 @@ export default class MainPage extends Component {
                 <Route path="/creategroup" render={props => {
                     return < CreateGroupForm {...props} post={this.post}/>
                 }} />
-                <Route exact path="/groups/:groupId(\d+)" render={props => {
-                    return < GroupRestaurants />
+                <Route exact path="/group/:groupId(\d+)" render={props => {
+                    return < GroupRestaurants {...props} restaurants={this.state.restaurants}/>
                 }}/>
+                <Route exact path="/group/:groupId(\d+)/restaurant/:restaurant(\d+)" render={props => {
+                    return < RestaurantOrder {...props}  restaurants={this.state.restaurants}
+                    groups={this.state.groups}/>
+                }} />
             </React.Fragment>
         )
     }
