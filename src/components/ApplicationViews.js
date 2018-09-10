@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Redirect } from 'react-router-dom'
-// import NavBar from "./navbar/Navbar"
+import NavBar from "./navbar/NavBar"
 import MainPage from "./MainPage";
 
 export default class ApplicationViews extends Component {
@@ -10,7 +10,7 @@ export default class ApplicationViews extends Component {
                 {
                     this.props.isAuthenticated() &&
                     <div>
-                        {/* <NavBar handleLogout={this.props.handleLogout}/> */}
+                        <NavBar handleLogout={this.props.handleLogout}/>
                         <MainPage />
                     </div>
                 }

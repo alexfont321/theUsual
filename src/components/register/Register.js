@@ -72,6 +72,7 @@ export default class Register extends Component {
                     </fieldset>
                     <fieldset>
                         <button type="submit">Register</button>
+                        <button onClick={() => this.props.history.push("/login")}>Cancel</button>
                     </fieldset>
                 </form>
             </React.Fragment>

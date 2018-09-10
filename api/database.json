@@ -29,7 +29,24 @@
       "id": 4
     }
   ],
-  "groups": [],
+  "groups": [
+    {
+      "id": 1,
+      "name": "The first group"
+    },
+    {
+      "name": "for the new ones",
+      "id": 2
+    },
+    {
+      "name": "here we goooooo!!!!",
+      "id": 3
+    },
+    {
+      "name": "howdy howdy",
+      "id": 4
+    }
+  ],
   "restaurants": [],
   "orders": []
 }

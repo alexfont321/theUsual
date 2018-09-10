@@ -12,7 +12,7 @@ class App extends Component {
 
   handleLogout = () => {
     sessionStorage.removeItem("user");
-    this.setState({ login: false })
+    this.setState({ login: false });
   }
 
   isAuthenticated = () => sessionStorage.getItem("user") !== null
