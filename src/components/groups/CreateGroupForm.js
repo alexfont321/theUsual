@@ -32,7 +32,7 @@ export default class CreateGroupForm extends Component {
                 <form onSubmit={this.constructNewGroup}>
                     <div>
                     <label htmlFor="name">Event</label>
-                        <input type="text" required="true"
+                        <input type="text"
                                className="form-control" id="name"
                                onChange={this.handleFieldChange}
                                placeholder="New Group Name" />

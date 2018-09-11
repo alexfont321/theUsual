@@ -32,42 +32,63 @@
   "groups": [
     {
       "id": 1,
-      "name": "The first group"
+      "name": "The first group",
+      "usersInGroup": []
     },
     {
       "name": "for the new ones",
-      "id": 2
+      "id": 2,
+      "usersInGroup": []
     },
     {
       "name": "here we goooooo!!!!",
-      "id": 3
+      "id": 3,
+      "usersInGroup": []
     },
     {
       "name": "howdy howdy",
-      "id": 4
+      "id": 4,
+      "usersInGroup": []
+    },
+    {
+      "name": "newnewnew",
+      "id": 5,
+      "usersInGroup": []
+    },
+    {
+      "name": "6th Group",
+      "id": 6,
+      "usersInGroup": []
     }
   ],
   "restaurants": [
     {
-    "id": 1,
-    "name": "Chick-Fil-A",
-    "menu": [],
-    "beverages": []
-  },
-  {
-    "id": 2,
-    "name": "Jersey Mike's",
-    "menu": [],
-    "beverages": []
-  },
-  {
-    "id": 3,
-    "name": "Starbucks",
-    "menu": [],
-    "beverages": []
-  }
-
-
-],
-  "orders": []
+      "id": 1,
+      "name": "Chick-Fil-A",
+      "menu": ["sandwich", "chicken nuggets"],
+      "beverages": ["coke", "sweet tea", "lemonade"]
+    },
+    {
+      "id": 2,
+      "name": "Jersey Mike's",
+      "menu": [],
+      "beverages": []
+    },
+    {
+      "id": 3,
+      "name": "Starbucks",
+      "menu": [],
+      "beverages": []
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "restaurantId": 2,
+      "groupId": 3,
+      "userId": 1,
+      "food": "sandwich",
+      "drink": "coke"
+    }
+  ]
 }
