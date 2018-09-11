@@ -15,14 +15,17 @@ export default class Login extends Component {
     }
 
     handleLogin = e => {
-        // e.preventDefault();
+        e.preventDefault();
         dbCalls.getAll("users")
         .then(users => {
             let userNameExists = users.find(u => u.email === this.state.email && u.password === this.state.password);
             if(userNameExists) {
-                sessionStorage.setItem("user", JSON.stringify(userNameExists))
+                sessionStorage.setItem("user", JSON.stringify(userNameExists));
+                this.props.history.push("/")
             } else {
                 alert ("Your email and password are not correct! Please retry or register a new account")
+                this.props.history.push("/register")
+
             }
 
         })

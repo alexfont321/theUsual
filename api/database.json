@@ -45,8 +45,53 @@
     {
       "name": "howdy howdy",
       "id": 4
+    },
+    {
+      "name": "newnewnew",
+      "id": 5
+    },
+    {
+      "name": "6th Group",
+      "id": 6
     }
   ],
-  "restaurants": [],
-  "orders": []
+  "restaurants": [
+    {
+      "id": 1,
+      "name": "Chick-Fil-A"
+    },
+    {
+      "id": 2,
+      "name": "Jersey Mike's"
+    },
+    {
+      "id": 3,
+      "name": "Starbucks"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "restaurantId": 2,
+      "groupId": 3,
+      "userId": 1,
+      "food": "sandwich with a coke"
+    },
+    {
+      "food": "",
+      "userId": "",
+      "groupId": "",
+      "restaurantId": "",
+      "id": 2
+    },
+    {
+      "food": "fsfssf",
+      "userId": "",
+      "groupId": "",
+      "restaurantId": "",
+      "id": 3
+    }
+  ],
+  "groupRestaurants": [],
+  "userGrous": []
 }
