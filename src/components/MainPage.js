@@ -5,6 +5,7 @@ import dbCalls from "../modules/DatabaseCalls";
 import CreateGroupForm from "./groups/CreateGroupForm";
 import GroupRestaurants from "./groups/GroupRestaurants"
 import RestaurantOrder from "./restaurants/RestaurantOrders"
+import AddOrder from "./orders/AddOrder"
 import "bulma/css/bulma.css"
 
 export default class MainPage extends Component {
@@ -48,6 +49,10 @@ export default class MainPage extends Component {
                 <Route exact path="/group/:groupId(\d+)/restaurant/:restaurant(\d+)" render={props => {
                     return < RestaurantOrder {...props}  restaurants={this.state.restaurants}
                     groups={this.state.groups} orders={this.state.orders}/>
+                }} />
+                <Route exact path="/group/:groupId(\d+)/restaurant/:restaurant(\d+)/add-order" render={props => {
+                    return < AddOrder {...props} restaurants={this.state.restaurants} 
+                    post={this.post}/>
                 }} />
             </React.Fragment>
         )
