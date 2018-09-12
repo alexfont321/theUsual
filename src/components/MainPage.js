@@ -15,7 +15,8 @@ export default class MainPage extends Component {
         groups: [],
         restaurants: [],
         orders: [],
-        userGroups: []
+        userGroups: [],
+        groupRestaurants: []
     }
 
     componentDidMount() {
@@ -39,6 +40,10 @@ export default class MainPage extends Component {
         .then(() => dbCalls.getDataByUserId(this.state.user.id, resource))
         .then(returnObject => this.setState({[resource]: returnObject}))
     }
+    postGroupRestaurant = (resource, newObject, groupId) => {return dbCalls.post(resource, newObject)
+        .then(() => dbCalls.getRestaurantbyGroupId(groupId, resource))
+        .then(returnObject => this.setState({[resource]: returnObject}))
+    }
 
 
 
@@ -54,7 +59,8 @@ export default class MainPage extends Component {
                     return < CreateGroupForm {...props} post={this.post}/>
                 }} />
                 <Route exact path="/group/:groupId(\d+)" render={props => {
-                    return < GroupRestaurants {...props} restaurants={this.state.restaurants}/>
+                    return < GroupRestaurants {...props} restaurants={this.state.restaurants}
+                    postGroupRestaurant={this.postGroupRestaurant}/>
                 }}/>
                 <Route exact path="/group/:groupId(\d+)/restaurant/:restaurant(\d+)" render={props => {
                     return < RestaurantOrder {...props}  restaurants={this.state.restaurants}

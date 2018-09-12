@@ -45,6 +45,14 @@
     {
       "name": "howdy howdy",
       "id": 4
+    },
+    {
+      "name": "Group for the 5",
+      "id": 5
+    },
+    {
+      "name": "newest group",
+      "id": 6
     }
   ],
   "restaurants": [
@@ -84,18 +92,14 @@
       "id": 3
     }
   ],
-  "groupRestaurants": [],
-  "userGroups": [
+  "groupRestaurants": [
     {
-      "groupId": 4,
-      "userId": 1,
-      "id": 1
-    },
-    {
+      "id": 1,
       "groupId": 2,
-      "userId": 1,
-      "id": 2
-    },
+      "restaurantId": 1
+    }
+  ],
+  "userGroups": [
     {
       "groupId": 4,
       "userId": 2,
@@ -110,6 +114,31 @@
       "groupId": 3,
       "userId": 2,
       "id": 5
+    },
+    {
+      "groupId": 5,
+      "userId": 2,
+      "id": 6
+    },
+    {
+      "groupId": 1,
+      "userId": 2,
+      "id": 7
+    },
+    {
+      "groupId": 6,
+      "userId": 2,
+      "id": 8
+    },
+    {
+      "groupId": 3,
+      "userId": 1,
+      "id": 9
+    },
+    {
+      "groupId": 1,
+      "userId": 1,
+      "id": 10
     }
   ]
 }
