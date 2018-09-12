@@ -30,19 +30,32 @@ export default class GroupsList extends Component {
         this.props.postUserGroup("userGroups", userGroup).then(() => this.setState({joinGroup: true}))
     }
 
+    // mapOverUserGroup = () => {
+
+    // }
+
 
     render() {
+
+        const userGroupId = this.props.userGroups.map(userGroup => userGroup.groupId);
+        // console.log(userGroupId)
+        // let groupIdMatchUserGroup = this.props.groups.find(group => group.id === parseInt(userGroupId), 0) || {}
+        // console.log(groupIdMatchUserGroup)
+
+
         return (
             <React.Fragment>
                 <h1>Groups List</h1>
                 <button onClick={() => this.props.history.push("/creategroup")}>Create a Group</button>
                 { 
-                    this.props.groups.map(group => {
+
+                    this.props.groups.map(group => { 
+                        if (group.id !== userGroupId.find(id => id === group.id)) {
                         return <div className="card" key={group.id}>
                                     <p className="card-header">{group.name}</p>
                                     <button id={group.id} onClick={this.moveUserIntoGroup}>Join Group</button>
                                 </div>
-
+                        }
                         }
 
                     )
