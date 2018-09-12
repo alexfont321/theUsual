@@ -45,14 +45,6 @@
     {
       "name": "howdy howdy",
       "id": 4
-    },
-    {
-      "name": "newnewnew",
-      "id": 5
-    },
-    {
-      "name": "6th Group",
-      "id": 6
     }
   ],
   "restaurants": [
@@ -93,5 +85,46 @@
     }
   ],
   "groupRestaurants": [],
-  "userGrous": []
+  "userGroups": [
+    {
+      "groupId": 4,
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "groupId": 3,
+      "userId": 1,
+      "id": 2
+    },
+    {
+      "groupId": 1,
+      "userId": 1,
+      "id": 3
+    },
+    {
+      "groupId": 4,
+      "userId": 2,
+      "id": 4
+    },
+    {
+      "groupId": 3,
+      "userId": 2,
+      "id": 5
+    },
+    {
+      "groupId": 1,
+      "userId": 2,
+      "id": 6
+    },
+    {
+      "groupId": 1,
+      "userId": 2,
+      "id": 7
+    },
+    {
+      "groupId": 1,
+      "userId": 1,
+      "id": 8
+    }
+  ]
 }

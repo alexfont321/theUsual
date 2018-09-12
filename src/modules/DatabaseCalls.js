@@ -54,5 +54,11 @@ export default Object.create(null, {
             }).then(e => e.json())
         }
     },
+    getDataByUserId: {
+        value: (userId, resource) => {
+            return fetch(`${remoteURL}/users/${userId}/${resource}`)
+            .then(response => response.json())
+        }
+    }  
     
 })

@@ -11,23 +11,32 @@ import "bulma/css/bulma.css"
 export default class MainPage extends Component {
 
     state = {
+        user: [],
         groups: [],
         restaurants: [],
-        orders: []
+        orders: [],
+        userGroups: []
     }
 
     componentDidMount() {
         let newState = {}
+        newState.user = JSON.parse(sessionStorage.getItem("user")) || {};
         dbCalls.getAll("groups").then(groups => {newState.groups = groups})
         .then(() => dbCalls.getAll("restaurants")).then(restaurants => {newState.restaurants = restaurants})
         .then(() => dbCalls.getAll("orders")).then(orders => {newState.orders = orders})
+        .then(() => dbCalls.getDataByUserId(newState.user.id, "userGroups")).then(userGroups => {newState.userGroups = userGroups})
         .then(() => {
             this.setState(newState)
-
-    })}
+        })
+    }
 
     post = (resource, newObject) => {return dbCalls.post(resource, newObject)
         .then(() => dbCalls.getAll(resource))
+        .then(returnObject => this.setState({[resource]: returnObject}))
+    }
+
+    postUserGroup = (resource, newObject) => {return dbCalls.post(resource, newObject)
+        .then(() => dbCalls.getDataByUserId(this.state.user.id, resource))
         .then(returnObject => this.setState({[resource]: returnObject}))
     }
 
@@ -38,7 +47,8 @@ export default class MainPage extends Component {
             <React.Fragment>
                 <Route path="/groups" render={props => {
                     return < GroupsList {...props} 
-                    groups={this.state.groups} post={this.post}/>
+                    groups={this.state.groups} postUserGroup={this.postUserGroup}
+                    user={this.state.user} userGroups={this.state.userGroups}/>
                 }} />
                 <Route path="/creategroup" render={props => {
                     return < CreateGroupForm {...props} post={this.post}/>
