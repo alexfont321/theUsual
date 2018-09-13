@@ -70,10 +70,17 @@ export default class MainPage extends Component {
                 <Route path="/creategroup" render={props => {
                     return < CreateGroupForm {...props} post={this.post}/>
                 }} />
+
+
+
                 <Route exact path="/group/:groupId(\d+)" render={props => {
                     return < GroupRestaurants {...props} restaurants={this.state.restaurants}
-                    postGroupRestaurant={this.postGroupRestaurant} groupRestaurants={this.state.groupRestaurants}/>
+                    postGroupRestaurant={this.postGroupRestaurant} groupRestaurants={this.state.groupRestaurants}
+                    groups={this.state.groups}/>
                 }}/>
+
+
+
                 <Route exact path="/group/:groupId(\d+)/restaurant/:restaurant(\d+)" render={props => {
                     return < RestaurantOrder {...props}  restaurants={this.state.restaurants}
                     groups={this.state.groups} orders={this.state.orders} user={this.state.user}/>

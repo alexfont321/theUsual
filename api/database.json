@@ -117,6 +117,46 @@
       "id": 2,
       "groupId": 1,
       "restaurantId": 3
+    },
+    {
+      "groupId": 3,
+      "restaurantId": 1,
+      "id": 3
+    },
+    {
+      "groupId": 6,
+      "restaurantId": 3,
+      "id": 4
+    },
+    {
+      "groupId": 5,
+      "restaurantId": 1,
+      "id": 5
+    },
+    {
+      "groupId": 4,
+      "restaurantId": 2,
+      "id": 6
+    },
+    {
+      "groupId": 2,
+      "restaurantId": 3,
+      "id": 7
+    },
+    {
+      "groupId": 7,
+      "restaurantId": 2,
+      "id": 8
+    },
+    {
+      "groupId": 4,
+      "restaurantId": 3,
+      "id": 9
+    },
+    {
+      "groupId": 8,
+      "restaurantId": 3,
+      "id": 10
     }
   ],
   "userGroups": [
@@ -199,6 +239,26 @@
       "groupId": 6,
       "userId": 1,
       "id": 18
+    },
+    {
+      "groupId": 5,
+      "userId": 1,
+      "id": 19
+    },
+    {
+      "groupId": 7,
+      "userId": 2,
+      "id": 20
+    },
+    {
+      "groupId": 4,
+      "userId": 1,
+      "id": 21
+    },
+    {
+      "groupId": 8,
+      "userId": 1,
+      "id": 22
     }
   ]
 }
