@@ -18,6 +18,7 @@ export default class GroupRestaurants extends Component {
                         this.props.restaurants.map(restaurant => {
                             return <div className="restaurants" key={restaurant.id}>
                                     <p>{restaurant.name}</p>
+                                    <p>Poop</p>
                                     <button onClick={() => this.props.history.push(`/group/${correctGroupId}/restaurant/${restaurant.id}`)}>Save Restaurant to Group</button>
                                 </div>
 
@@ -27,7 +28,14 @@ export default class GroupRestaurants extends Component {
                     }
                     <h3>This Group's Restaurants</h3>
                         {
-                            
+                            this.props.groupRestaurants.map(restaurant => {
+                                return <div className="restaurants" key={restaurant.id}>
+                                    <p>{restaurant.restaurantId}</p>
+                                    <p>Poop</p>
+                                    <button onClick={() => this.props.history.push(`/group/${correctGroupId}/restaurant/${restaurant.id}`)}>Save Restaurant to Group</button>
+                                </div>
+
+                            })
 
                         }
 

@@ -53,6 +53,14 @@
     {
       "name": "newest group",
       "id": 6
+    },
+    {
+      "name": "More Groups",
+      "id": 7
+    },
+    {
+      "name": "another oNe",
+      "id": 8
     }
   ],
   "restaurants": [
@@ -90,6 +98,13 @@
       "groupId": "",
       "restaurantId": "",
       "id": 3
+    },
+    {
+      "food": "mikeyD",
+      "userId": "",
+      "groupId": "",
+      "restaurantId": "",
+      "id": 4
     }
   ],
   "groupRestaurants": [
@@ -139,6 +154,46 @@
       "groupId": 1,
       "userId": 1,
       "id": 10
+    },
+    {
+      "groupId": 2,
+      "userId": 1,
+      "id": 11
+    },
+    {
+      "groupId": 6,
+      "userId": 3,
+      "id": 12
+    },
+    {
+      "groupId": 5,
+      "userId": 3,
+      "id": 13
+    },
+    {
+      "groupId": 4,
+      "userId": 3,
+      "id": 14
+    },
+    {
+      "groupId": 3,
+      "userId": 3,
+      "id": 15
+    },
+    {
+      "groupId": 2,
+      "userId": 3,
+      "id": 16
+    },
+    {
+      "groupId": 1,
+      "userId": 3,
+      "id": 17
+    },
+    {
+      "groupId": 6,
+      "userId": 1,
+      "id": 18
     }
   ]
 }

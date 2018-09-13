@@ -25,10 +25,19 @@ export default class MainPage extends Component {
         dbCalls.getAll("groups").then(groups => {newState.groups = groups})
         .then(() => dbCalls.getAll("restaurants")).then(restaurants => {newState.restaurants = restaurants})
         .then(() => dbCalls.getAll("orders")).then(orders => {newState.orders = orders})
+        // .then(() => dbCalls.getAll("groupRestaurants")).then(restaurants => {newState.groupRestaurants = restaurants})
         .then(() => dbCalls.getDataByUserId(newState.user.id, "userGroups")).then(userGroups => {newState.userGroups = userGroups})
         .then(() => {
             this.setState(newState)
         })
+    }
+
+    getDatafromGroupList = (theData) => {
+        dbCalls.getRestaurantbyGroupId(theData, "groupRestaurants")
+        .then(restaurants => {
+            this.setState({groupRestaurants: restaurants})
+        })
+
     }
 
     post = (resource, newObject) => {return dbCalls.post(resource, newObject)
@@ -53,21 +62,24 @@ export default class MainPage extends Component {
                 <Route path="/groups" render={props => {
                     return < GroupsList {...props} 
                     groups={this.state.groups} postUserGroup={this.postUserGroup}
-                    user={this.state.user} userGroups={this.state.userGroups}/>
+                    user={this.state.user} userGroups={this.state.userGroups}
+                    getDatafromGroupList={this.getDatafromGroupList} />
                 }} />
+
+
                 <Route path="/creategroup" render={props => {
                     return < CreateGroupForm {...props} post={this.post}/>
                 }} />
                 <Route exact path="/group/:groupId(\d+)" render={props => {
                     return < GroupRestaurants {...props} restaurants={this.state.restaurants}
-                    postGroupRestaurant={this.postGroupRestaurant}/>
+                    postGroupRestaurant={this.postGroupRestaurant} groupRestaurants={this.state.groupRestaurants}/>
                 }}/>
                 <Route exact path="/group/:groupId(\d+)/restaurant/:restaurant(\d+)" render={props => {
                     return < RestaurantOrder {...props}  restaurants={this.state.restaurants}
-                    groups={this.state.groups} orders={this.state.orders}/>
+                    groups={this.state.groups} orders={this.state.orders} user={this.state.user}/>
                 }} />
                 <Route exact path="/group/:groupId(\d+)/restaurant/:restaurant(\d+)/add-order" render={props => {
-                    return < AddOrder {...props} restaurants={this.state.restaurants} 
+                    return < AddOrder {...props} restaurants={this.state.restaurants} user={this.state.user}
                     post={this.post}/>
                 }} />
             </React.Fragment>

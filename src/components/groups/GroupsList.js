@@ -1,4 +1,10 @@
 import React, { Component } from "react"
+// import GroupRestaurants from "./GroupRestaurants"
+// import { Route } from 'react-router-dom';
+
+
+
+
 
 export default class GroupsList extends Component {
 
@@ -28,12 +34,18 @@ export default class GroupsList extends Component {
         }
 
         this.props.postUserGroup("userGroups", userGroup).then(() => this.setState({ joinGroup: true }))
+
     }
 
-    // mapOverUserGroup = () => {
 
-    // }
+    saveGroupRestaurant = e => {
+        e.preventDefault();
 
+        this.props.getDatafromGroupList(e.target.id)
+
+        this.props.history.push(`/group/${e.target.id}`)
+
+    }
 
     render() {
 
@@ -55,7 +67,7 @@ export default class GroupsList extends Component {
                                 <p className="card-header">{group.name}</p>
                                 <button id={group.id} onClick={this.moveUserIntoGroup}>Join Group</button>
                             </div>
-                        } 
+                        }
                     }
 
                     )
@@ -65,12 +77,11 @@ export default class GroupsList extends Component {
                     this.props.userGroups.map(userGroup => {
                         return <div className="card" key={userGroup.id}>
                             <p>{this.props.groups.find(group => group.id === userGroup.groupId).name}</p>
-                            <button onClick={() => this.props.history.push(`/group/${userGroup.groupId}`)}>See Group</button>
+                            <button id={userGroup.groupId} onClick={this.saveGroupRestaurant}>See Group</button>
                         </div>
 
                     })
                 }
-
 
             </React.Fragment>
         )
