@@ -112,6 +112,11 @@
       "id": 1,
       "groupId": 2,
       "restaurantId": 1
+    },
+    {
+      "id": 2,
+      "groupId": 1,
+      "restaurantId": 3
     }
   ],
   "userGroups": [
