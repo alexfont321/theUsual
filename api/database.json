@@ -126,6 +126,18 @@
       "userId": 4,
       "groupRestaurantId": 2,
       "id": 8
+    },
+    {
+      "food": "order for alex",
+      "userId": 1,
+      "groupRestaurantId": 3,
+      "id": 9
+    },
+    {
+      "food": "iced coffee",
+      "userId": 1,
+      "groupRestaurantId": 10,
+      "id": 10
     }
   ],
   "groupRestaurants": [
