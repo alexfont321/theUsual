@@ -99,7 +99,7 @@ export default class MainPage extends Component {
                 }} />
                 <Route exact path="/group/:groupId(\d+)/restaurant/:restaurant(\d+)/add-order" render={props => {
                     return < AddOrder {...props} restaurants={this.state.restaurants} user={this.state.user}
-                    post={this.post}/>
+                    post={this.post} postOrdersInGroupRest={this.postOrdersInGroupRest}/>
                 }} />
             </React.Fragment>
         )

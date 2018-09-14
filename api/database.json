@@ -110,11 +110,22 @@
       "id": 4
     },
     {
+      "food": "mikeyD",
+      "userId": 4,
+      "groupRestaurantId": 3,
+      "id": 6
+    },
+    {
       "food": "Latte",
-      "userId": "",
-      "groupId": "",
-      "restaurantId": "",
-      "id": 5
+      "userId": 4,
+      "groupRestaurantId": 2,
+      "id": 7
+    },
+    {
+      "food": "Caramel Frapp",
+      "userId": 4,
+      "groupRestaurantId": 2,
+      "id": 8
     }
   ],
   "groupRestaurants": [
@@ -309,6 +320,16 @@
       "groupId": 5,
       "userId": 5,
       "id": 26
+    },
+    {
+      "groupId": 1,
+      "userId": 4,
+      "id": 27
+    },
+    {
+      "groupId": 3,
+      "userId": 4,
+      "id": 28
     }
   ]
 }
