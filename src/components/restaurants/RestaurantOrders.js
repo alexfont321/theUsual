@@ -17,6 +17,9 @@ export default class RestaurantOrder extends Component {
                     this.props.orders.map(order => {
                         return <div className="orders" key={order.id}> 
                                     <p>{order.food}</p>
+                                    <button 
+                                    onClick={() => this.props.deleteOrder("orders", `${order.id}`, `${correctRestaurantId}`)}
+                                    >Delete</button>
                                 </div>
                     })
                 }

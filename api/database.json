@@ -86,58 +86,40 @@
   ],
   "orders": [
     {
-      "id": 1,
-      "groupRestaurantId": 3,
-      "userId": 1,
-      "food": "sandwich with a coke"
+      "food": "mikeyD",
+      "userId": 5,
+      "groupRestaurantId": 13,
+      "id": 1
     },
     {
-      "food": "poop sandwich",
-      "userId": 2,
-      "groupRestaurantId": 3,
+      "food": "Deluxe Club Supreme",
+      "userId": 5,
+      "groupRestaurantId": 6,
       "id": 2
     },
     {
-      "food": "deluxe cheesburger",
-      "userId": 2,
-      "groupRestaurantId": 9,
+      "food": "My Favorite Nashville Cuban",
+      "userId": 5,
+      "groupRestaurantId": 6,
       "id": 3
     },
     {
-      "food": "mikeyD",
-      "userId": 1,
-      "groupRestaurantId": 11,
-      "id": 4
-    },
-    {
-      "food": "mikeyD",
-      "userId": 4,
-      "groupRestaurantId": 3,
+      "food": "espresso",
+      "userId": 5,
+      "groupRestaurantId": 10,
       "id": 6
     },
     {
-      "food": "Latte",
-      "userId": 4,
-      "groupRestaurantId": 2,
+      "food": "Caramel Frapp",
+      "userId": 5,
+      "groupRestaurantId": 10,
       "id": 7
     },
     {
-      "food": "Caramel Frapp",
-      "userId": 4,
-      "groupRestaurantId": 2,
+      "food": "Big Salad",
+      "userId": 5,
+      "groupRestaurantId": 11,
       "id": 8
-    },
-    {
-      "food": "order for alex",
-      "userId": 1,
-      "groupRestaurantId": 3,
-      "id": 9
-    },
-    {
-      "food": "iced coffee",
-      "userId": 1,
-      "groupRestaurantId": 10,
-      "id": 10
     }
   ],
   "groupRestaurants": [
@@ -342,6 +324,11 @@
       "groupId": 3,
       "userId": 4,
       "id": 28
+    },
+    {
+      "groupId": 3,
+      "userId": 5,
+      "id": 29
     }
   ]
 }

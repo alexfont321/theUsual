@@ -27,7 +27,7 @@ export default class AddOrder extends Component {
                 userId: this.props.user.id,
                 groupRestaurantId: groupId
             }
-            this.props.postOrdersInGroupRest("orders", newOrder, groupId ).then(() => this.props.history.goBack())
+            this.props.postOrdersInGroupRest("orders", newOrder, groupId).then(() => this.props.history.goBack())
         }
     } 
 
