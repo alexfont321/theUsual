@@ -92,12 +92,6 @@
       "id": 1
     },
     {
-      "food": "Deluxe Club Supreme",
-      "userId": 5,
-      "groupRestaurantId": 6,
-      "id": 2
-    },
-    {
       "food": "My Favorite Nashville Cuban",
       "userId": 5,
       "groupRestaurantId": 6,
@@ -120,6 +114,12 @@
       "userId": 5,
       "groupRestaurantId": 11,
       "id": 8
+    },
+    {
+      "food": "another order for display",
+      "userId": 5,
+      "groupRestaurantId": 6,
+      "id": 9
     }
   ],
   "groupRestaurants": [
@@ -192,6 +192,11 @@
       "groupId": 8,
       "restaurantId": 2,
       "id": 14
+    },
+    {
+      "groupId": 1,
+      "restaurantId": 1,
+      "id": 15
     }
   ],
   "userGroups": [
@@ -329,6 +334,11 @@
       "groupId": 3,
       "userId": 5,
       "id": 29
+    },
+    {
+      "groupId": 1,
+      "userId": 5,
+      "id": 30
     }
   ]
 }
