@@ -15,17 +15,19 @@ export default class AddOrder extends Component {
 
     addOrderToRestaurant = e => {
         e.preventDefault();
+
+        const groupId = parseInt(this.props.match.params.restaurant, 0)
+
         if(this.state.name === "") {
             window.alert("Please fill out the order")
 
         } else { 
             const newOrder = {
                 food: this.state.food,
-                userId: "",
-                groupId: "",
-                restaurantId: ""
+                userId: this.props.user.id,
+                groupRestaurantId: groupId
             }
-            this.props.post("orders", newOrder)
+            this.props.postOrdersInGroupRest("orders", newOrder, groupId ).then(() => this.props.history.goBack())
         }
     } 
 
