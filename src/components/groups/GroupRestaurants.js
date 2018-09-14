@@ -4,10 +4,39 @@ export default class GroupRestaurants extends Component {
 
 
 
+    moveRestaurantIntoGroup = e => {
+        e.preventDefault();
+
+        const correctGroupId = parseInt(this.props.match.params.groupId, 0)
+
+
+        const newGroupRest = {
+            groupId: correctGroupId,
+            restaurantId: parseInt(e.target.id, 0)
+        }
+
+        this.props.postGroupRestaurant("groupRestaurants", newGroupRest, correctGroupId)
+
+    }
+
+    saveOrdersInGroupRestaurant = e => {
+        e.preventDefault();
+
+        const correctGroupId = parseInt(this.props.match.params.groupId, 0)
+
+
+        this.props.getDatafromGroupRestList(e.target.id)
+
+        this.props.history.push(`/group/${correctGroupId}/restaurant/${e.target.id}`)
+    }
+
     render() {
         
         const correctGroupId = parseInt(this.props.match.params.groupId, 0)
+        // const correctGroupIdForTitle = parseInt(this.state.match.params.groupId, 0)
 
+
+        const groupRestId = this.props.groupRestaurants.map(restaurant => restaurant.restaurantId);
 
 
         return(
@@ -16,23 +45,24 @@ export default class GroupRestaurants extends Component {
                     <h1>Restaurants Available</h1>
                     {
                         this.props.restaurants.map(restaurant => {
+                            if(restaurant.id !== groupRestId.find(id => id === restaurant.id)) { 
                             return <div className="restaurants" key={restaurant.id}>
                                     <p>{restaurant.name}</p>
-                                    <p>Poop</p>
-                                    <button onClick={() => this.props.history.push(`/group/${correctGroupId}/restaurant/${restaurant.id}`)}>Save Restaurant to Group</button>
+                                    <button id={restaurant.id} onClick={this.moveRestaurantIntoGroup}>Save Restaurant to Group</button>
                                 </div>
+                            }
 
                             }
 
                         )
                     }
-                    <h3>This Group's Restaurants</h3>
+                    <h3>Restaurants for {this.props.groups.find(group => group.id === correctGroupId).name}
+                    </h3>
                         {
                             this.props.groupRestaurants.map(restaurant => {
                                 return <div className="restaurants" key={restaurant.id}>
-                                    <p>{restaurant.restaurantId}</p>
-                                    <p>Poop</p>
-                                    <button onClick={() => this.props.history.push(`/group/${correctGroupId}/restaurant/${restaurant.id}`)}>Save Restaurant to Group</button>
+                                    <p>{this.props.restaurants.find(rest => rest.id === restaurant.restaurantId).name}</p>
+                                    <button id={restaurant.id} onClick={this.saveOrdersInGroupRestaurant}>See Orders</button>
                                 </div>
 
                             })

@@ -65,6 +65,12 @@ export default Object.create(null, {
             return fetch(`${remoteURL}/groups/${userId}/${resource}`)
             .then(response => response.json())
         }
-    }  
+    },
+    getOrdersbyGroupAndRestaurant: {
+        value: (groupRestId, resource) => {
+            return fetch(`${remoteURL}/groupRestaurants/${groupRestId}/${resource}`)
+            .then(r => r.json())
+        }
+    } 
     
 })
