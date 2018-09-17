@@ -65,6 +65,11 @@ export default class MainPage extends Component {
         .then(() => dbCalls.getOrdersbyGroupAndRestaurant(groupId, resource))
         .then(returnObject => this.setState({[resource]: returnObject}))
     }
+    
+    deleteOrder = (resource, orderId, groupId) => {dbCalls.delete(resource, orderId)
+        .then(() => dbCalls.getOrdersbyGroupAndRestaurant(groupId, resource))
+        .then(returnObject => this.setState({[resource]: returnObject}))
+    }
 
 
 
@@ -95,8 +100,11 @@ export default class MainPage extends Component {
 
                 <Route exact path="/group/:groupId(\d+)/restaurant/:restaurant(\d+)" render={props => {
                     return < RestaurantOrder {...props}  restaurants={this.state.restaurants}
-                    groups={this.state.groups} orders={this.state.orders} user={this.state.user}/>
+                    groups={this.state.groups} orders={this.state.orders} user={this.state.user}
+                    deleteOrder={this.deleteOrder}/>
                 }} />
+
+
                 <Route exact path="/group/:groupId(\d+)/restaurant/:restaurant(\d+)/add-order" render={props => {
                     return < AddOrder {...props} restaurants={this.state.restaurants} user={this.state.user}
                     post={this.post} postOrdersInGroupRest={this.postOrdersInGroupRest}/>

@@ -50,13 +50,18 @@ export default class GroupRestaurants extends Component {
                                     <p>{restaurant.name}</p>
                                     <button id={restaurant.id} onClick={this.moveRestaurantIntoGroup}>Save Restaurant to Group</button>
                                 </div>
+                            } else {
+                                return <div key={restaurant.id}>
+                                            <p></p>
+                                        </div>
                             }
 
                             }
 
                         )
                     }
-                    <h3>Restaurants for {this.props.groups.find(group => group.id === correctGroupId).name}
+                    <h3>Restaurants for 
+                    {() => this.props.groups.find(group => group.id === correctGroupId).name || {}}
                     </h3>
                         {
                             this.props.groupRestaurants.map(restaurant => {
