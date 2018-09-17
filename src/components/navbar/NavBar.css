@@ -1,0 +1,19 @@
+#navItem {
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 20px;
+
+}
+
+#logo {
+    margin: auto;
+    padding: 0;
+    height: 55px;
+    width: auto;
+}
+
+#main-navbar {
+    background-color: #F15548 !important;
+}
+
