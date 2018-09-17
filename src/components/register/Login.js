@@ -67,7 +67,7 @@ export default class Login extends Component {
                         /></div>
                     </div>
                     <div className="field is-grouped" id="buttongroup"> 
-                        <button className="button is-rounded is-outlined is-primary is-pulled-left " type="submit">Login</button>
+                        <button className="button is-rounded is-outlined is-primary is-pulled-left" type="submit">Login</button>
 
                         <button className="button is-rounded is-outlined is-primary is-pulled-right" onClick={this.goToRegister}>Register</button>
                     </div>
