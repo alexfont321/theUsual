@@ -1,0 +1,23 @@
+#login-page-wrapper {
+    height: 100vh;
+    width: 100%;
+    background-image: url("../../images/potstickers.jpg");
+    background-size: cover;
+
+
+}
+
+#spacer{
+    height: 100px;
+}
+
+form {
+    width: 20%;
+    margin-left: 2em;
+}
+
+#buttongroup {
+    justify-content: space-evenly;
+
+    display: flex;
+}

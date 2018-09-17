@@ -120,6 +120,24 @@
       "userId": 5,
       "groupRestaurantId": 6,
       "id": 9
+    },
+    {
+      "food": "sandwich",
+      "userId": 1,
+      "groupRestaurantId": 14,
+      "id": 11
+    },
+    {
+      "food": "Latte",
+      "userId": 1,
+      "groupRestaurantId": 10,
+      "id": 12
+    },
+    {
+      "food": "sandwich",
+      "userId": 3,
+      "groupRestaurantId": 3,
+      "id": 13
     }
   ],
   "groupRestaurants": [

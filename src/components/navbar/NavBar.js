@@ -8,7 +8,7 @@ export default class NavBar extends Component {
     render() {
         return (
             <div id="main-navbar">
-            <nav id="main-navbar" className="navbar is-fixed-top">
+            <nav id="main-navbar" className="navbar">
                 <div className="navbar-brand">
 
                     <Link className=""  to="/" id="navItem" href="">

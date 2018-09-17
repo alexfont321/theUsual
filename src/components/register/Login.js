@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import dbCalls from "../../modules/DatabaseCalls"
+import "./Login.css"
 
 export default class Login extends Component {
 
@@ -44,28 +45,35 @@ export default class Login extends Component {
     render() {
         return (
             <React.Fragment>
+                <div id="login-page-wrapper">
+                <div id="spacer"></div>
+                {/* <div id="background-image"> */}
                 <form onSubmit={this.handleLogin}>
-                    <fieldset>
-                        <label htmlFor="email">Email: </label>
+                    <div className="field">
+                        <label className="label" htmlFor="email">Email</label>
+                        <div className="control">
                         <input type="email" placeholder="Email"
                             onChange={this.handleFieldChange}
-                            id="email"
-                        />
-                    </fieldset>
-                    <fieldset>
-                        <label htmlFor="password">Password: </label>
+                            id="email" className="input is-primary is-rounded"
+                        /></div>
+                    </div>
+                    <div className="field">
+                        <label className="label" htmlFor="password">Password</label>
+                        <div className="control">
+
                         <input type="password" placeholder="Password"
                             onChange={this.handleFieldChange}
-                            id="password"
-                        />
-                    </fieldset>
-                    <fieldset>
-                        <button type="submit">Login</button>
-                    </fieldset>
-                    <fieldset>
-                        <button onClick={this.goToRegister}>Register</button>
-                    </fieldset>
+                            id="password" className="input is-primary is-rounded"
+                        /></div>
+                    </div>
+                    <div className="field is-grouped" id="buttongroup"> 
+                        <button className="button is-rounded is-outlined is-primary is-pulled-left " type="submit">Login</button>
+
+                        <button className="button is-rounded is-outlined is-primary is-pulled-right" onClick={this.goToRegister}>Register</button>
+                    </div>
                 </form>
+                {/* </div> */}
+                </div>
             </React.Fragment>
         )
     }
