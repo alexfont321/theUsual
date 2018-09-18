@@ -68,6 +68,14 @@
     {
       "name": "another oNe",
       "id": 8
+    },
+    {
+      "name": "Group For Cool Styles",
+      "id": 9
+    },
+    {
+      "name": "Franklin Templeton ",
+      "id": 10
     }
   ],
   "restaurants": [
@@ -357,6 +365,11 @@
       "groupId": 1,
       "userId": 5,
       "id": 30
+    },
+    {
+      "groupId": 2,
+      "userId": 5,
+      "id": 31
     }
   ]
 }

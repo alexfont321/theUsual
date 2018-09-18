@@ -26,7 +26,7 @@ export default class NavBar extends Component {
                                 <Link className="has-text-white" to="/favorites">My Favorites</Link>
                             </div >
                             <div className="navbar-item">
-                                <button className="Logout button is-rounded is-inverted is-link" onClick={this.props.handleLogout}>Logout</button></div>
+                                <button className="Logout button is-rounded is-outlined is-inverted is-link" onClick={this.props.handleLogout}>Logout</button></div>
                         </div></div>
             </nav></div>
                 )
