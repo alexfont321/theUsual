@@ -14,7 +14,7 @@ export default class NavBar extends Component {
                     <Link className=""  to="/" id="navItem" href="">
                         <img id="logo" className="navbar-item" src={Logo} alt="The Usual"/></Link>
                 </div>
-                    <div className="navbar-menu">
+                    <div className="navbar-menu is-active">
                         <div className="navbar-end">
                             <div className="navbar-item">
                                 <Link className="has-text-white" to="/">Home</Link>

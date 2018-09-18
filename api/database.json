@@ -421,6 +421,11 @@
       "groupId": 5,
       "userId": 6,
       "id": 34
+    },
+    {
+      "groupId": 9,
+      "userId": 1,
+      "id": 35
     }
   ]
 }
