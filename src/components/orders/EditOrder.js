@@ -6,5 +6,15 @@ export default class EditOrder extends Component {
         
     }
 
+render() {
+    return (
+        <React.Fragment>
+            <div>
+                <p>Edit Orders Bro</p>
+            </div>
 
+        </React.Fragment>
+
+    )
+}
 }

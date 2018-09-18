@@ -6,6 +6,7 @@ import CreateGroupForm from "./groups/CreateGroupForm";
 import GroupRestaurants from "./groups/GroupRestaurants"
 import RestaurantOrder from "./restaurants/RestaurantOrders"
 import AddOrder from "./orders/AddOrder"
+import EditOrder from "./orders/EditOrder"
 import "bulma/css/bulma.css"
 
 export default class MainPage extends Component {
@@ -109,6 +110,10 @@ export default class MainPage extends Component {
                     return < AddOrder {...props} restaurants={this.state.restaurants} user={this.state.user}
                     post={this.post} postOrdersInGroupRest={this.postOrdersInGroupRest}/>
                 }} />
+
+                <Route exact path="/group/:groupId(\d+)/restaurant/:restaurant(\d+)/edit-order/:orderId(\d+)"
+                    render={props => < EditOrder {...props} />
+                } />
             </React.Fragment>
         )
     }

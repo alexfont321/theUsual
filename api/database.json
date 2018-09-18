@@ -34,6 +34,13 @@
       "firstName": "jenn",
       "lastName": "lawson",
       "id": 5
+    },
+    {
+      "email": "rfont@me.com",
+      "password": "ito",
+      "firstName": "Rafael",
+      "lastName": "Font",
+      "id": 6
     }
   ],
   "groups": [
@@ -146,6 +153,18 @@
       "userId": 3,
       "groupRestaurantId": 3,
       "id": 13
+    },
+    {
+      "food": "Rafael's Macchiato",
+      "userId": 6,
+      "groupRestaurantId": 9,
+      "id": 14
+    },
+    {
+      "food": "Philly Cheesesteak",
+      "userId": 6,
+      "groupRestaurantId": 16,
+      "id": 15
     }
   ],
   "groupRestaurants": [
@@ -223,6 +242,11 @@
       "groupId": 1,
       "restaurantId": 1,
       "id": 15
+    },
+    {
+      "groupId": 10,
+      "restaurantId": 2,
+      "id": 16
     }
   ],
   "userGroups": [
@@ -370,6 +394,16 @@
       "groupId": 2,
       "userId": 5,
       "id": 31
+    },
+    {
+      "groupId": 10,
+      "userId": 6,
+      "id": 32
+    },
+    {
+      "groupId": 4,
+      "userId": 6,
+      "id": 33
     }
   ]
 }
