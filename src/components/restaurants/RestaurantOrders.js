@@ -2,11 +2,12 @@ import React, { Component } from "react";
 
 export default class RestaurantOrder extends Component {
 
-moveToEdit = e => {
-    const correctGroupId = parseInt(this.props.match.params.groupId, 0)
-    const correctRestaurantId = parseInt(this.props.match.params.restaurant, 0)
-    this.props.history.push(`/group/${correctGroupId}/restaurant/${correctRestaurantId}/edit-order/${e.target.id}`)
-}
+
+    moveToEdit = e => {
+        const correctGroupId = parseInt(this.props.match.params.groupId, 0)
+        const correctRestaurantId = parseInt(this.props.match.params.restaurant, 0)
+        this.props.history.push(`/group/${correctGroupId}/restaurant/${correctRestaurantId}/edit-order/${e.target.id}`)
+    }
 
     render() {
 

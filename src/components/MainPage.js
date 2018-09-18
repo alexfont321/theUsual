@@ -72,6 +72,11 @@ export default class MainPage extends Component {
         .then(returnObject => this.setState({[resource]: returnObject}))
     }
 
+    editOrder = (resource, orderId, newObject, groupRestId) => dbCalls.patch(resource, newObject, orderId)
+        .then(() => dbCalls.getOrdersbyGroupAndRestaurant(groupRestId, resource))
+        .then(returnObject => this.setState({[resource]: returnObject}))
+
+
 
 
     render() {
@@ -112,7 +117,8 @@ export default class MainPage extends Component {
                 }} />
 
                 <Route exact path="/group/:groupId(\d+)/restaurant/:restaurant(\d+)/edit-order/:orderId(\d+)"
-                    render={props => < EditOrder {...props} />
+                    render={props => < EditOrder {...props} orders={this.state.orders}
+                    editOrder={this.editOrder} restaurants={this.state.restaurants}/>
                 } />
             </React.Fragment>
         )
