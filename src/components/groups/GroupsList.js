@@ -89,7 +89,7 @@ export default class GroupsList extends Component {
                             </nav>
                         </div>
                         <div className="column is-two-thirds">
-                            <h1>{this.props.user.firstName}'s Groups</h1>
+                            <h1 className="title is-3">{this.props.user.firstName}'s Groups</h1>
                             <div className="columns is-multiline">
                             {
                                 this.props.userGroups.map(userGroup => {

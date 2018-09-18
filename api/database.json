@@ -97,6 +97,74 @@
     {
       "id": 3,
       "name": "Starbucks"
+    },
+    {
+      "id": 4,
+      "name": "McDonald's"
+    },
+    {
+      "id": 5,
+      "name": "Burger King"
+    },
+    {
+      "id": 6,
+      "name": "Outback"
+    },
+    {
+      "id": 7,
+      "name": "Pizza Hut"
+    },
+    {
+      "id": 8,
+      "name": "Taco Bell"
+    },
+    {
+      "id": 9,
+      "name": "Olive Garden"
+    },
+    {
+      "id": 10,
+      "name": "Hooters"
+    },
+    {
+      "id": 11,
+      "name": "Outback"
+    },
+    {
+      "id": 12,
+      "name": "Outback"
+    },
+    {
+      "id": 13,
+      "name": "Outback"
+    },
+    {
+      "id": 14,
+      "name": "Outback"
+    },
+    {
+      "id": 15,
+      "name": "Outback"
+    },
+    {
+      "id": 16,
+      "name": "Outback"
+    },
+    {
+      "id": 17,
+      "name": "Panera Bread"
+    },
+    {
+      "id": 18,
+      "name": "Outback"
+    },
+    {
+      "id": 19,
+      "name": "Zaxby's"
+    },
+    {
+      "id": 20,
+      "name": "Pita Pit"
     }
   ],
   "orders": [

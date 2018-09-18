@@ -41,7 +41,12 @@ export default class GroupRestaurants extends Component {
 
         return(
             <React.Fragment>
-                <div>
+                <div id="group-restaurants-wrapper">
+                    <section className="hero">
+                        <div className="hero-body">
+                            <h1 className="title has-text-black">Restaurants And Groups</h1>
+                        </div>
+                    </section>
                     <h1>Restaurants Available</h1>
                     {
                         this.props.restaurants.map(restaurant => {
@@ -60,8 +65,7 @@ export default class GroupRestaurants extends Component {
 
                         )
                     }
-                    <h3>Restaurants for 
-                    {() => this.props.groups.find(group => group.id === correctGroupId).name || {}}
+                    <h3>Restaurants for {this.props.groups.find(group => group.id === correctGroupId).name || {}}
                     </h3>
                         {
                             this.props.groupRestaurants.map(restaurant => {
