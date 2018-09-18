@@ -6,6 +6,7 @@ import CreateGroupForm from "./groups/CreateGroupForm";
 import GroupRestaurants from "./groups/GroupRestaurants"
 import RestaurantOrder from "./restaurants/RestaurantOrders"
 import AddOrder from "./orders/AddOrder"
+import EditOrder from "./orders/EditOrder"
 import "bulma/css/bulma.css"
 
 export default class MainPage extends Component {
@@ -71,6 +72,11 @@ export default class MainPage extends Component {
         .then(returnObject => this.setState({[resource]: returnObject}))
     }
 
+    editOrder = (resource, orderId, newObject, groupRestId) => dbCalls.patch(resource, newObject, orderId)
+        .then(() => dbCalls.getOrdersbyGroupAndRestaurant(groupRestId, resource))
+        .then(returnObject => this.setState({[resource]: returnObject}))
+
+
 
 
     render() {
@@ -109,6 +115,11 @@ export default class MainPage extends Component {
                     return < AddOrder {...props} restaurants={this.state.restaurants} user={this.state.user}
                     post={this.post} postOrdersInGroupRest={this.postOrdersInGroupRest}/>
                 }} />
+
+                <Route exact path="/group/:groupId(\d+)/restaurant/:restaurant(\d+)/edit-order/:orderId(\d+)"
+                    render={props => < EditOrder {...props} orders={this.state.orders}
+                    editOrder={this.editOrder} restaurants={this.state.restaurants}/>
+                } />
             </React.Fragment>
         )
     }
