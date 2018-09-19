@@ -83,6 +83,18 @@
     {
       "name": "Franklin Templeton ",
       "id": 10
+    },
+    {
+      "name": "Basic Landscaping",
+      "id": 11
+    },
+    {
+      "name": "Nashville Software School",
+      "id": 12
+    },
+    {
+      "name": "NormCore",
+      "id": 13
     }
   ],
   "restaurants": [
@@ -245,6 +257,12 @@
       "userId": 6,
       "groupRestaurantId": 16,
       "id": 18
+    },
+    {
+      "food": "Caramel Frapp",
+      "userId": 1,
+      "groupRestaurantId": 15,
+      "id": 19
     }
   ],
   "groupRestaurants": [
