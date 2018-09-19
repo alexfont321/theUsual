@@ -337,6 +337,16 @@
       "groupId": 1,
       "restaurantId": 4,
       "id": 18
+    },
+    {
+      "groupId": 4,
+      "restaurantId": 16,
+      "id": 19
+    },
+    {
+      "groupId": 7,
+      "restaurantId": 9,
+      "id": 20
     }
   ],
   "userGroups": [

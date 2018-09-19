@@ -58,7 +58,7 @@ export default class GroupRestaurants extends Component {
                                         if (restaurant.id !== groupRestId.find(id => id === restaurant.id)) {
                                             return <div className="panel-block" key={restaurant.id}>
                                                 <p className="control">{restaurant.name}</p>
-                                                <button className="button is-primary is-rounded is-medium"
+                                                <button className="button is-info is-rounded is-medium"
                                                     id={restaurant.id} onClick={this.moveRestaurantIntoGroup}>
                                                     <span id={restaurant.id} className="icon">
                                                         <i id={restaurant.id} className="fas fa-check"></i>
