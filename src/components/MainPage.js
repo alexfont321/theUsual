@@ -7,7 +7,9 @@ import GroupRestaurants from "./groups/GroupRestaurants"
 import RestaurantOrder from "./restaurants/RestaurantOrders"
 import AddOrder from "./orders/AddOrder"
 import EditOrder from "./orders/EditOrder"
+import HomePage from "./homePage/HomePage"
 import "bulma/css/bulma.css"
+import "@fortawesome/fontawesome-free/css/all.css"
 
 export default class MainPage extends Component {
 
@@ -82,6 +84,10 @@ export default class MainPage extends Component {
     render() {
         return (
             <React.Fragment>
+                <Route exact path="/" render={props => {
+                    return <HomePage />
+                }}/>
+
                 <Route path="/groups" render={props => {
                     return < GroupsList {...props} 
                     groups={this.state.groups} postUserGroup={this.postUserGroup}

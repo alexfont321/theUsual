@@ -28,20 +28,28 @@ export default class CreateGroupForm extends Component {
     render() {
         return (
             <React.Fragment>
-                <h3>Create A New Group</h3>
-                <form onSubmit={this.constructNewGroup}>
-                    <div>
-                    <label htmlFor="name">Event</label>
+                <section className="hero is-small">
+                    <div className="hero-body">
+                        <h3 className="title" >Create A New Group</h3>
+                    </div>
+                </section>
+                <div className="columns">
+
+                <form className="form column is-4" onSubmit={this.constructNewGroup}>
+                    <div className="field">
+                        <label className="label" htmlFor="name">New Group</label>
                         <input type="text"
-                               className="form-control" id="name"
+                               className="form-control input is-rounded is-primary"
+                               id="name"
                                onChange={this.handleFieldChange}
                                placeholder="New Group Name" />
                     </div>
-                    <div>
-                        <button type="submit">Create New Group</button>
+                    <div className="field">
+                        <button className="button is-rounded is-primary" type="submit">Create New Group</button>
                     </div>
 
                 </form>
+            </div>
             </React.Fragment>
         )
     }

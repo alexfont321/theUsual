@@ -1,0 +1,27 @@
+#homepage-wrapper {
+    background: #ECE9E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    height: 100vh;
+}
+
+#the-hero {
+    background-image: url("../../images/biker.jpg");
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    background-position: center;
+
+}
+
+#hero-body {
+    background-color: rgba(148, 148, 148, 0.582);
+}
+
+#theusual-logo {
+    height: 7.8em;
+    width: auto;
+    margin-bottom: 7.3em;
+    margin-right: 1.6em;
+}

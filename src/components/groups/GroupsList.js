@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import "./GroupsList.css"
 // import GroupRestaurants from "./GroupRestaurants"
 // import { Route } from 'react-router-dom';
+// import "@fortawesome/fontawesome-free"
 
 
 
@@ -89,11 +90,11 @@ export default class GroupsList extends Component {
                             </nav>
                         </div>
                         <div className="column is-two-thirds">
-                            <h1>{this.props.user.firstName}'s Groups</h1>
+                            <h1 className="title is-3">{this.props.user.firstName}'s Groups</h1>
                             <div className="columns is-multiline">
                             {
                                 this.props.userGroups.map(userGroup => {
-                                    return <div className="column is-one-third"><div className="card" key={userGroup.id}>
+                                    return <div className="column is-one-third" key={userGroup.id}><div className="card">
                                         <p className="card-content">{this.props.groups.find(group => group.id === userGroup.groupId).name}</p>
                                         <div className="card-footer">
                                         <button id={userGroup.groupId} onClick={this.saveGroupRestaurant}
