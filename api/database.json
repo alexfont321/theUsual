@@ -347,6 +347,41 @@
       "groupId": 7,
       "restaurantId": 9,
       "id": 20
+    },
+    {
+      "groupId": 5,
+      "restaurantId": 9,
+      "id": 21
+    },
+    {
+      "groupId": 6,
+      "restaurantId": 2,
+      "id": 22
+    },
+    {
+      "groupId": 5,
+      "restaurantId": 8,
+      "id": 23
+    },
+    {
+      "groupId": 6,
+      "restaurantId": 5,
+      "id": 24
+    },
+    {
+      "groupId": 5,
+      "restaurantId": 13,
+      "id": 25
+    },
+    {
+      "groupId": 3,
+      "restaurantId": 5,
+      "id": 26
+    },
+    {
+      "groupId": 3,
+      "restaurantId": 6,
+      "id": 27
     }
   ],
   "userGroups": [

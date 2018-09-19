@@ -94,7 +94,7 @@ export default class GroupsList extends Component {
                             <div className="columns is-multiline">
                             {
                                 this.props.userGroups.map(userGroup => {
-                                    return <div className="column is-one-third"><div className="card" key={userGroup.id}>
+                                    return <div className="column is-one-third" key={userGroup.id}><div className="card">
                                         <p className="card-content">{this.props.groups.find(group => group.id === userGroup.groupId).name}</p>
                                         <div className="card-footer">
                                         <button id={userGroup.groupId} onClick={this.saveGroupRestaurant}
