@@ -400,6 +400,11 @@
       "groupId": 3,
       "restaurantId": 6,
       "id": 27
+    },
+    {
+      "groupId": 7,
+      "restaurantId": 5,
+      "id": 28
     }
   ],
   "userGroups": [
