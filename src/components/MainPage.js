@@ -9,6 +9,7 @@ import AddOrder from "./orders/AddOrder"
 import EditOrder from "./orders/EditOrder"
 import HomePage from "./homePage/HomePage"
 import "bulma/css/bulma.css"
+import "@fortawesome/fontawesome-free/css/all.css"
 
 export default class MainPage extends Component {
 

@@ -128,27 +128,27 @@
     },
     {
       "id": 11,
-      "name": "Outback"
+      "name": "Arby's"
     },
     {
       "id": 12,
-      "name": "Outback"
+      "name": "Taco Mamacita"
     },
     {
       "id": 13,
-      "name": "Outback"
+      "name": "Chipotle"
     },
     {
       "id": 14,
-      "name": "Outback"
+      "name": "Waffle House"
     },
     {
       "id": 15,
-      "name": "Outback"
+      "name": "Baja Burrito"
     },
     {
       "id": 16,
-      "name": "Outback"
+      "name": "Hugh Baby's"
     },
     {
       "id": 17,
@@ -156,7 +156,7 @@
     },
     {
       "id": 18,
-      "name": "Outback"
+      "name": "Shake Shack"
     },
     {
       "id": 19,
@@ -327,6 +327,16 @@
       "groupId": 10,
       "restaurantId": 2,
       "id": 16
+    },
+    {
+      "groupId": 1,
+      "restaurantId": 16,
+      "id": 17
+    },
+    {
+      "groupId": 1,
+      "restaurantId": 4,
+      "id": 18
     }
   ],
   "userGroups": [
@@ -494,6 +504,11 @@
       "groupId": 9,
       "userId": 1,
       "id": 35
+    },
+    {
+      "groupId": 8,
+      "userId": 3,
+      "id": 36
     }
   ]
 }

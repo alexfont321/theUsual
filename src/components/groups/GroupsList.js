@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import "./GroupsList.css"
 // import GroupRestaurants from "./GroupRestaurants"
 // import { Route } from 'react-router-dom';
+// import "@fortawesome/fontawesome-free"
 
 
 
