@@ -432,6 +432,11 @@
       "groupId": 4,
       "restaurantId": 7,
       "id": 29
+    },
+    {
+      "groupId": 1,
+      "restaurantId": 12,
+      "id": 30
     }
   ],
   "userGroups": [
