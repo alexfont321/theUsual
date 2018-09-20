@@ -4,34 +4,34 @@
       "id": 1,
       "email": "alex@me.com",
       "password": "al",
-      "firstName": "alejandro",
+      "firstName": "Alejandro",
       "lastName": "font"
     },
     {
       "email": "hey@me.com",
       "password": "kara",
-      "firstName": "kara",
+      "firstName": "Kara",
       "lastName": "robinson",
       "id": 2
     },
     {
       "email": "danny@me.com",
       "password": "danny",
-      "firstName": "daniel",
+      "firstName": "Daniel",
       "lastName": "font",
       "id": 3
     },
     {
       "email": "el@me.com",
       "password": "el",
-      "firstName": "elizabeth",
+      "firstName": "Elizabeth",
       "lastName": "font",
       "id": 4
     },
     {
       "email": "jenn@me.com",
       "password": "000",
-      "firstName": "jenn",
+      "firstName": "Jenn",
       "lastName": "lawson",
       "id": 5
     },
@@ -273,6 +273,12 @@
       "userId": 1,
       "groupRestaurantId": 11,
       "id": 20
+    },
+    {
+      "food": "Gordita",
+      "userId": 1,
+      "groupRestaurantId": 23,
+      "id": 21
     }
   ],
   "groupRestaurants": [

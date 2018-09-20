@@ -19,7 +19,8 @@ export default class MainPage extends Component {
         restaurants: [],
         orders: [],
         userGroups: [],
-        groupRestaurants: []
+        groupRestaurants: [],
+        users: []
     }
 
     componentDidMount() {
@@ -27,6 +28,8 @@ export default class MainPage extends Component {
         newState.user = JSON.parse(sessionStorage.getItem("user")) || {};
         dbCalls.getAll("groups").then(groups => {newState.groups = groups})
             .then(() => dbCalls.getAll("restaurants")).then(restaurants => {newState.restaurants = restaurants})
+            .then(() => dbCalls.getAll("users")).then(users => {newState.users = users})
+
             // .then(() => dbCalls.getAll("orders")).then(orders => {newState.orders = orders})
             // .then(() => dbCalls.getAll("groupRestaurants")).then(restaurants => {newState.groupRestaurants = restaurants})
             .then(() => dbCalls.getDataByUserId(newState.user.id, "userGroups")).then(userGroups => {newState.userGroups = userGroups})
@@ -113,7 +116,7 @@ export default class MainPage extends Component {
                 <Route exact path="/group/:groupId(\d+)/restaurant/:restaurant(\d+)" render={props => {
                     return < RestaurantOrder {...props}  restaurants={this.state.restaurants}
                     groups={this.state.groups} orders={this.state.orders} user={this.state.user}
-                    deleteOrder={this.deleteOrder}/>
+                    deleteOrder={this.deleteOrder} users={this.state.users}/>
                 }} />
 
 

@@ -1,6 +1,20 @@
 import React, { Component } from "react";
+// import dbCalls from "../../modules/DatabaseCalls";
 
 export default class RestaurantOrder extends Component {
+
+    // state = {
+    //     users: []
+    // }
+
+    // componentDidMount() {
+    //     let newState = {}
+
+    //     dbCalls.getAll("users").then(users => {newState.users = users})
+    //     .then(() => {
+    //         this.setState(newState)
+    // })
+    // }
 
 
     moveToEdit = e => {
@@ -33,8 +47,8 @@ export default class RestaurantOrder extends Component {
                                 this.props.orders.map(order => {
                                     return <div className="column is-one-quarter" key={order.id}>
                                             <div className="card">
-                                                <div className="card-header">
-                                                    <p>{order.userId}</p>
+                                                <div className="card-header is-centered">
+                                                    <p className="is-centered card-header-title">{this.props.users.find(user => user.id === order.userId).firstName}</p>
                                                 </div>
                                                 <div className="card-content">
                                                      <p>{order.food}</p>
