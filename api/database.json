@@ -233,7 +233,7 @@
       "id": 12
     },
     {
-      "food": "sandwich",
+      "food": "sandwich with cola",
       "userId": 3,
       "groupRestaurantId": 3,
       "id": 13
@@ -269,16 +269,22 @@
       "id": 19
     },
     {
-      "food": "sandwich",
-      "userId": 1,
-      "groupRestaurantId": 11,
-      "id": 20
-    },
-    {
       "food": "Gordita",
       "userId": 1,
       "groupRestaurantId": 23,
       "id": 21
+    },
+    {
+      "food": "French Fries",
+      "userId": 1,
+      "groupRestaurantId": 2,
+      "id": 22
+    },
+    {
+      "food": "Cheeseburger with Fries and a Coke. No Onions",
+      "userId": 1,
+      "groupRestaurantId": 4,
+      "id": 23
     }
   ],
   "groupRestaurants": [
