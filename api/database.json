@@ -4,34 +4,34 @@
       "id": 1,
       "email": "alex@me.com",
       "password": "al",
-      "firstName": "alejandro",
+      "firstName": "Alejandro",
       "lastName": "font"
     },
     {
       "email": "hey@me.com",
       "password": "kara",
-      "firstName": "kara",
+      "firstName": "Kara",
       "lastName": "robinson",
       "id": 2
     },
     {
       "email": "danny@me.com",
       "password": "danny",
-      "firstName": "daniel",
+      "firstName": "Daniel",
       "lastName": "font",
       "id": 3
     },
     {
       "email": "el@me.com",
       "password": "el",
-      "firstName": "elizabeth",
+      "firstName": "Elizabeth",
       "lastName": "font",
       "id": 4
     },
     {
       "email": "jenn@me.com",
       "password": "000",
-      "firstName": "jenn",
+      "firstName": "Jenn",
       "lastName": "lawson",
       "id": 5
     },
@@ -95,6 +95,10 @@
     {
       "name": "NormCore",
       "id": 13
+    },
+    {
+      "name": "sup dude 2",
+      "id": 14
     }
   ],
   "restaurants": [
@@ -229,7 +233,7 @@
       "id": 12
     },
     {
-      "food": "sandwich",
+      "food": "sandwich with cola",
       "userId": 3,
       "groupRestaurantId": 3,
       "id": 13
@@ -263,6 +267,24 @@
       "userId": 1,
       "groupRestaurantId": 15,
       "id": 19
+    },
+    {
+      "food": "Gordita",
+      "userId": 1,
+      "groupRestaurantId": 23,
+      "id": 21
+    },
+    {
+      "food": "French Fries",
+      "userId": 1,
+      "groupRestaurantId": 2,
+      "id": 22
+    },
+    {
+      "food": "Cheeseburger with Fries and a Coke. No Onions",
+      "userId": 1,
+      "groupRestaurantId": 4,
+      "id": 23
     }
   ],
   "groupRestaurants": [
@@ -400,6 +422,16 @@
       "groupId": 3,
       "restaurantId": 6,
       "id": 27
+    },
+    {
+      "groupId": 7,
+      "restaurantId": 5,
+      "id": 28
+    },
+    {
+      "groupId": 4,
+      "restaurantId": 7,
+      "id": 29
     }
   ],
   "userGroups": [
@@ -572,6 +604,11 @@
       "groupId": 8,
       "userId": 3,
       "id": 36
+    },
+    {
+      "groupId": 14,
+      "userId": 2,
+      "id": 37
     }
   ]
 }

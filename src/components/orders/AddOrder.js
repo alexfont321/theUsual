@@ -37,17 +37,24 @@ export default class AddOrder extends Component {
 
         return (
             <React.Fragment>
-                <h4>Add Your Order</h4>
+                <section className="hero">
+                    <div className="hero-body">
+                        <h1 className="title has-text-black">Add Your Order</h1>
+                    </div>
+                </section>
                 <form onSubmit={this.addOrderToRestaurant}>
-                    <fieldset>
-                        <label htmlFor="food">Food</label>
-                        <input defaultValue=""  id="food"
-                                onChange={this.handleFieldChange} />
-                    </fieldset>
-                    <fieldset>
-                        <button>Save Order</button>
+                <div className="field">
 
-                    </fieldset>
+                        {/* <label className="label" htmlFor="food">Food</label> */}
+                        <div className="control">
+
+                            <textarea defaultValue=""  id="food" className="textarea is-primary is-rounded"
+                                onChange={this.handleFieldChange} placeholder="Place Your Order" ></textarea>
+                    </div></div>
+                    <div className="field">
+                        <button className="button is-rounded is-outlined is-primary">Save Order</button>
+
+                    </div>
                 </form>
             </React.Fragment>
         )

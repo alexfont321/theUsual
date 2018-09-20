@@ -35,24 +35,28 @@ export default class EditOrder extends Component {
     render() {
         return (
             <React.Fragment>
-                <div>
-                    <p>Edit Orders Bro</p>
+                <section className="hero">
+                    <div className="hero-body">
+                        <h1 className="title has-text-black">Edit Your Order</h1>
+                    </div>
+                </section>
                     <form>
                         <div className="field">
-                            <label htmlFor="food">Event</label>
-                            <input type="text" required="true"
-                                className="form-control input is-rounded is-primary"
+                        <div className="control">
+
+                            <input type="textarea" required="true"
+                                className="textarea is-primary"
                                 onChange={this.handleFieldChange}
                                 id="food"
-                                placeholder="Your Order"
-                                defaultValue={this.state.food} />
-                        </div>
+                                // placeholder="Your Order"
+                                defaultValue={this.state.food}
+                                />
+                        </div></div>
                         <div className="field">
-                            <button onClick={this.editOrder} className="button">Edit Your Order</button>
+                            <button onClick={this.editOrder} className="button is-rounded is-outlined is-primary">Edit Your Order</button>
                         </div>
 
                     </form>
-                </div>
 
             </React.Fragment>
 

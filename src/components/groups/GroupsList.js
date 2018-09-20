@@ -99,9 +99,9 @@ export default class GroupsList extends Component {
                                         <div className="card-footer">
                                         <button id={userGroup.groupId} onClick={this.saveGroupRestaurant}
                                         className="button card-footer-item is-small is-paddingless
-                                        is-info is-outlined"
+                                        is-info is-inverted"
                                         >See Group</button>
-                                        <button className="button card-footer-item is-small is-paddingless is-danger is-outlined">Leave Group</button>
+                                        <button className="button card-footer-item is-small is-paddingless is-danger is-inverted">Leave Group</button>
                                         </div>
                                     </div></div>
 
