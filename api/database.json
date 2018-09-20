@@ -95,6 +95,10 @@
     {
       "name": "NormCore",
       "id": 13
+    },
+    {
+      "name": "sup dude 2",
+      "id": 14
     }
   ],
   "restaurants": [
@@ -263,6 +267,12 @@
       "userId": 1,
       "groupRestaurantId": 15,
       "id": 19
+    },
+    {
+      "food": "sandwich",
+      "userId": 1,
+      "groupRestaurantId": 11,
+      "id": 20
     }
   ],
   "groupRestaurants": [
@@ -405,6 +415,11 @@
       "groupId": 7,
       "restaurantId": 5,
       "id": 28
+    },
+    {
+      "groupId": 4,
+      "restaurantId": 7,
+      "id": 29
     }
   ],
   "userGroups": [
@@ -577,6 +592,11 @@
       "groupId": 8,
       "userId": 3,
       "id": 36
+    },
+    {
+      "groupId": 14,
+      "userId": 2,
+      "id": 37
     }
   ]
 }
