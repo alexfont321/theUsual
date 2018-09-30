@@ -45,6 +45,7 @@ export default class RestaurantOrder extends Component {
                         <section className="columns is-multiline">
                             {
                                 this.props.orders.map(order => {
+                                    if (this.props.user.id === order.userId) {
                                     return <div className="column is-one-quarter" key={order.id}>
                                             <div className="card">
                                                 <div className="card-header is-centered">
@@ -62,6 +63,24 @@ export default class RestaurantOrder extends Component {
                                             </div>
                                     </div>
                                 </div>
+                                    } else {
+                                        return <div className="column is-one-quarter" key={order.id}>
+                                            <div className="card">
+                                                <div className="card-header is-centered">
+                                                    <p className="is-centered card-header-title">{this.props.users.find(user => user.id === order.userId).firstName}</p>
+                                                </div>
+                                                <div className="card-content">
+                                                     <p>{order.food}</p>
+                                                </div>
+                                                <div className="card-footer">
+                                
+                                        <button id={order.id} className="card-footer-item button is-paddingless is-inverted is-static">Edit</button>
+                                            <button className="card-footer-item button is-paddingless is-inverted is-danger"
+                                                     onClick={() => this.props.deleteOrder("orders", `${order.id}`, `${correctRestaurantId}`)}>Delete</button>
+                                            </div>
+                                    </div>
+                                </div>
+                                    }
                                 })
                             }
                         </section>
