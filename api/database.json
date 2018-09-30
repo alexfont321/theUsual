@@ -667,11 +667,6 @@
     },
     {
       "groupId": 15,
-      "userId": 2,
-      "id": 40
-    },
-    {
-      "groupId": 15,
       "userId": 1,
       "id": 41
     },
@@ -684,6 +679,11 @@
       "groupId": 11,
       "userId": 5,
       "id": 43
+    },
+    {
+      "groupId": 7,
+      "userId": 6,
+      "id": 44
     }
   ]
 }

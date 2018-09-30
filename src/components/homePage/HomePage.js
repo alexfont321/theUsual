@@ -10,9 +10,9 @@ export default class HomePage extends Component {
                 <div id="homepage-wrapper">
                     <section className="hero is-large" id="the-hero">
                         <div className="hero-body has-text-centered" id="hero-body">
-                            <div className="container">
+                            {/* <div className="container">
                                 <img src={Logo} id="theusual-logo"/>
-                            </div>
+                            </div> */}
                         </div>
                     </section>
                     <section className="container has-text-centered title is-2">
