@@ -267,12 +267,6 @@
       "id": 18
     },
     {
-      "food": "Caramel Frapp",
-      "userId": 1,
-      "groupRestaurantId": 15,
-      "id": 19
-    },
-    {
       "food": "Gordita",
       "userId": 1,
       "groupRestaurantId": 23,
@@ -325,6 +319,18 @@
       "userId": 1,
       "groupRestaurantId": 5,
       "id": 29
+    },
+    {
+      "food": "Chicken Nuggets with honey mustard.",
+      "userId": 3,
+      "groupRestaurantId": 5,
+      "id": 30
+    },
+    {
+      "food": "Doubleshot",
+      "userId": 5,
+      "groupRestaurantId": 7,
+      "id": 31
     }
   ],
   "groupRestaurants": [
