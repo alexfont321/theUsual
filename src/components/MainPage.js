@@ -81,6 +81,10 @@ export default class MainPage extends Component {
         .then(() => dbCalls.getOrdersbyGroupAndRestaurant(groupRestId, resource))
         .then(returnObject => this.setState({[resource]: returnObject}))
 
+    deleteGroupFromUser = (resource, userGroupId) => dbCalls.delete(resource, userGroupId)
+    .then(() => dbCalls.getDataByUserId(this.state.user.id, resource))
+    .then(returnObject => this.setState({[resource]: returnObject}))
+
 
 
 
@@ -95,7 +99,8 @@ export default class MainPage extends Component {
                     return < GroupsList {...props} 
                     groups={this.state.groups} postUserGroup={this.postUserGroup}
                     user={this.state.user} userGroups={this.state.userGroups}
-                    getDatafromGroupList={this.getDatafromGroupList} />
+                    getDatafromGroupList={this.getDatafromGroupList}
+                    deleteGroupFromUser={this.deleteGroupFromUser} />
                 }} />
 
 

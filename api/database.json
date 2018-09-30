@@ -313,6 +313,18 @@
       "userId": 5,
       "groupRestaurantId": 31,
       "id": 27
+    },
+    {
+      "food": "Chicken Nuggets with Lemonade",
+      "userId": 1,
+      "groupRestaurantId": 3,
+      "id": 28
+    },
+    {
+      "food": "Chicken Salad Sandwich",
+      "userId": 1,
+      "groupRestaurantId": 5,
+      "id": 29
     }
   ],
   "groupRestaurants": [
@@ -559,11 +571,6 @@
       "id": 18
     },
     {
-      "groupId": 5,
-      "userId": 1,
-      "id": 19
-    },
-    {
       "groupId": 7,
       "userId": 2,
       "id": 20
@@ -577,11 +584,6 @@
       "groupId": 8,
       "userId": 1,
       "id": 22
-    },
-    {
-      "groupId": 7,
-      "userId": 1,
-      "id": 23
     },
     {
       "groupId": 4,
