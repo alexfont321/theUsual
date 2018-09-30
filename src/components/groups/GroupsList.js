@@ -49,6 +49,12 @@ export default class GroupsList extends Component {
 
     }
 
+
+    leaveGroupAndDeleteUserOrder = e => {
+        e.preventDefault(); 
+        this.props.deleteGroupFromUser("userGroups", e.target.id)
+    }
+
     render() {
 
         const userGroupId = this.props.userGroups.map(userGroup => userGroup.groupId);
@@ -101,7 +107,8 @@ export default class GroupsList extends Component {
                                         className="button card-footer-item is-small is-paddingless
                                         is-info is-inverted"
                                         >See Group</button>
-                                        <button className="button card-footer-item is-small is-paddingless is-danger is-inverted">Leave Group</button>
+                                        <button id={userGroup.id} onClick={this.leaveGroupAndDeleteUserOrder}
+                                        className="button card-footer-item is-small is-paddingless is-danger is-inverted">Leave Group</button>
                                         </div>
                                     </div></div>
 
