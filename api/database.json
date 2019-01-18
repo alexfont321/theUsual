@@ -62,6 +62,13 @@
       "firstName": "Jonathan",
       "lastName": "Edwards",
       "id": 9
+    },
+    {
+      "email": "daniel@poop.com",
+      "password": "poop",
+      "firstName": "Dan",
+      "lastName": "Poop",
+      "id": 10
     }
   ],
   "groups": [
@@ -92,6 +99,14 @@
     {
       "name": "Demo ",
       "id": 16
+    },
+    {
+      "name": "Font Family",
+      "id": 17
+    },
+    {
+      "name": "New Group",
+      "id": 18
     }
   ],
   "restaurants": [
@@ -226,12 +241,6 @@
       "id": 25
     },
     {
-      "food": "Cold Brew with 2% milk",
-      "userId": 1,
-      "groupRestaurantId": 31,
-      "id": 26
-    },
-    {
       "food": "Tall Latte",
       "userId": 5,
       "groupRestaurantId": 31,
@@ -242,12 +251,6 @@
       "userId": 1,
       "groupRestaurantId": 32,
       "id": 32
-    },
-    {
-      "food": "Iced Venti Matcha Lemonade",
-      "userId": 7,
-      "groupRestaurantId": 31,
-      "id": 33
     },
     {
       "food": "Chicken fettuccini Alfredo ",
@@ -278,6 +281,36 @@
       "userId": 1,
       "groupRestaurantId": 34,
       "id": 38
+    },
+    {
+      "food": "Chicken sand with coke and fries",
+      "userId": 1,
+      "groupRestaurantId": 36,
+      "id": 39
+    },
+    {
+      "food": "Soup ",
+      "userId": 4,
+      "groupRestaurantId": 32,
+      "id": 40
+    },
+    {
+      "food": "King of burger",
+      "userId": 4,
+      "groupRestaurantId": 38,
+      "id": 41
+    },
+    {
+      "food": "Sandwich",
+      "userId": 1,
+      "groupRestaurantId": 6,
+      "id": 42
+    },
+    {
+      "food": "iced coffee",
+      "userId": 1,
+      "groupRestaurantId": 31,
+      "id": 43
     }
   ],
   "groupRestaurants": [
@@ -335,6 +368,51 @@
       "groupId": 16,
       "restaurantId": 6,
       "id": 35
+    },
+    {
+      "groupId": 17,
+      "restaurantId": 1,
+      "id": 36
+    },
+    {
+      "groupId": 17,
+      "restaurantId": 10,
+      "id": 37
+    },
+    {
+      "groupId": 11,
+      "restaurantId": 5,
+      "id": 38
+    },
+    {
+      "groupId": 11,
+      "restaurantId": 16,
+      "id": 39
+    },
+    {
+      "groupId": 11,
+      "restaurantId": 2,
+      "id": 40
+    },
+    {
+      "groupId": 11,
+      "restaurantId": 7,
+      "id": 41
+    },
+    {
+      "groupId": 11,
+      "restaurantId": 6,
+      "id": 42
+    },
+    {
+      "groupId": 11,
+      "restaurantId": 1,
+      "id": 43
+    },
+    {
+      "groupId": 11,
+      "restaurantId": 11,
+      "id": 44
     }
   ],
   "userGroups": [
@@ -347,11 +425,6 @@
       "groupId": 4,
       "userId": 3,
       "id": 14
-    },
-    {
-      "groupId": 4,
-      "userId": 1,
-      "id": 21
     },
     {
       "groupId": 4,
@@ -380,11 +453,6 @@
     },
     {
       "groupId": 11,
-      "userId": 1,
-      "id": 42
-    },
-    {
-      "groupId": 11,
       "userId": 5,
       "id": 43
     },
@@ -409,19 +477,64 @@
       "id": 49
     },
     {
-      "groupId": 15,
-      "userId": 1,
-      "id": 50
-    },
-    {
       "groupId": 11,
       "userId": 4,
       "id": 51
     },
     {
+      "groupId": 17,
+      "userId": 4,
+      "id": 54
+    },
+    {
+      "groupId": 15,
+      "userId": 4,
+      "id": 55
+    },
+    {
       "groupId": 16,
+      "userId": 4,
+      "id": 56
+    },
+    {
+      "groupId": 4,
+      "userId": 4,
+      "id": 57
+    },
+    {
+      "groupId": 4,
+      "userId": 10,
+      "id": 58
+    },
+    {
+      "groupId": 15,
       "userId": 1,
-      "id": 52
+      "id": 61
+    },
+    {
+      "groupId": 13,
+      "userId": 1,
+      "id": 62
+    },
+    {
+      "groupId": 10,
+      "userId": 1,
+      "id": 63
+    },
+    {
+      "groupId": 11,
+      "userId": 1,
+      "id": 64
+    },
+    {
+      "groupId": 17,
+      "userId": 1,
+      "id": 65
+    },
+    {
+      "groupId": 12,
+      "userId": 1,
+      "id": 66
     }
   ]
 }
